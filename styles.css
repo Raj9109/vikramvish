@@ -54,7 +54,7 @@ nav ul li a:hover {
     margin-left: 20px;
 }
 
-.hero {
+.hero, .content {
     background-size: cover;
     background-position: center;
     height: 500px;
@@ -64,6 +64,7 @@ nav ul li a:hover {
     align-items: center;
     color: white;
     text-align: center;
+    background-color: #e0f7fa; /* डिफॉल्ट बैकग्राउंड कलर */
 }
 
 .main-title {
@@ -79,6 +80,8 @@ nav ul li a:hover {
 .content {
     padding: 40px;
     text-align: center;
+    height: auto; /* कंटेंट के हिसाब से हाइट */
+    min-height: 500px; /* मिनिमम हाइट */
 }
 
 .content h2 {
