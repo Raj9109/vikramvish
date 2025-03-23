@@ -1,35 +1,3 @@
-const backgroundImages = [
-    'https://raw.githubusercontent.com/raj9109/vikramvish/main/cc1.jpg',
-    'https://raw.githubusercontent.com/raj9109/vikramvish/main/cc2.jpg',
-    'https://raw.githubusercontent.com/raj9109/vikramvish/main/cc3.jpg',
-    'https://raw.githubusercontent.com/raj9109/vikramvish/main/cc4.jpg',
-    'https://raw.githubusercontent.com/raj9109/vikramvish/main/cc5.jpg',
-    'https://raw.githubusercontent.com/raj9109/vikramvish/main/cc6.jpg',
-    'https://raw.githubusercontent.com/raj9109/vikramvish/main/cc7.jpg',
-    'https://raw.githubusercontent.com/raj9109/vikramvish/main/cc8.jpg',
-    'https://raw.githubusercontent.com/raj9109/vikramvish/main/cc12.jpg'
-];
-
-function setRandomBackground() {
-    const randomIndex = Math.floor(Math.random() * backgroundImages.length);
-    const heroSection = document.querySelector('.hero');
-    const contentSection = document.querySelector('.content');
-    
-    if (heroSection) {
-        heroSection.style.backgroundImage = `url('${backgroundImages[randomIndex]}')`;
-    }
-    if (contentSection) {
-        contentSection.style.backgroundImage = `url('${backgroundImages[randomIndex]}')`;
-    }
-}
-
-// पेज लोड होने पर पहली बार बैकग्राउंड सेट करें
-window.onload = function() {
-    setRandomBackground();
-    // हर 3 सेकंड में बैकग्राउंड बदलें
-    setInterval(setRandomBackground, 3000);
-};
-
 function changeLanguage() {
     const lang = document.getElementById('language').value;
     if (lang === 'hi') {
