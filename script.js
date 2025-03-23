@@ -48,10 +48,12 @@ function changeLanguage() {
         if (document.querySelector('.main-title')) {
             document.querySelector('.main-title').textContent = 'जलवायु परिवर्तन';
             document.querySelector('.tagline').textContent = 'जलवायु कार्रवाई के लिए एक साथ काम करना';
-            document.querySelector('.activist-title').textContent = 'जलवायु परिवर्तन कार्यकर्ता';
         }
         if (document.querySelector('.main-heading')) {
             document.querySelector('.main-heading').textContent = 'जलवायु परिवर्तन';
+        }
+        if (document.querySelector('.activist-title')) {
+            document.querySelector('.activist-title').textContent = 'जलवायु परिवर्तन कार्यकर्ता';
         }
         document.querySelector('nav ul li:nth-child(1) a').textContent = 'होम';
         document.querySelector('nav ul li:nth-child(2) a').textContent = 'कारण';
@@ -75,10 +77,12 @@ function changeLanguage() {
         if (document.querySelector('.main-title')) {
             document.querySelector('.main-title').textContent = 'Climate Change';
             document.querySelector('.tagline').textContent = 'Working together for climate action';
-            document.querySelector('.activist-title').textContent = 'CLIMATE CHANGE ACTIVIST';
         }
         if (document.querySelector('.main-heading')) {
             document.querySelector('.main-heading').textContent = 'Climate Change';
+        }
+        if (document.querySelector('.activist-title')) {
+            document.querySelector('.activist-title').textContent = 'CLIMATE CHANGE ACTIVIST';
         }
         document.querySelector('nav ul li:nth-child(1) a').textContent = 'Home';
         document.querySelector('nav ul li:nth-child(2) a').textContent = 'Causes';
