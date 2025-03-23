@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003087;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.site-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(45deg, #ff6f61, #ffcc5c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #00a1d6;
+}
+
+.language {
+    margin-left: 20px;
+}
+
+.hero, .content {
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background-color: #e0f7fa; /* डिफॉल्ट बैकग्राउंड कलर */
+}
+
+.main-title {
+    font-size: 60px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.tagline {
+    font-size: 24px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.profile-photo {
+    width: 150px; /* फोटो की चौड़ाई */
+    height: 150px; /* फोटो की हाइट */
+    border-radius: 50%; /* फोटो को गोल करना */
+    margin-top: 20px; /* टाइटल और फोटो के बीच गैप */
+    border: 3px solid white; /* फोटो के चारों ओर बॉर्डर */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* फोटो पर शैडो */
+}
+
+.activist-title {
+    font-size: 20px; /* टाइटल का साइज़ */
+    font-weight: bold; /* बोल्ड टेक्स्ट */
+    margin-top: 10px; /* फोटो और टाइटल के बीच गैप */
+    margin-bottom: 5px; /* टाइटल और नाम के बीच गैप */
+    color: #ffffff; /* सफेद रंग */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* शैडो */
+}
+
+.profile-name {
+    font-size: 28px; /* नाम का साइज़ */
+    font-weight: bold; /* बोल्ड टेक्स्ट */
+    margin-top: 5px; /* टाइटल और नाम के बीच गैप */
+    text-transform: uppercase; /* टेक्स्ट को अपरकेस में */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* शैडो */
+    animation: flash 2s infinite; /* फ्लैशिंग एनिमेशन */
+}
+
+/* फ्लैशिंग एनिमेशन */
+@keyframes flash {
+    0% {
+        background: linear-gradient(45deg, #ff6f61, #ffcc5c); /* नारंगी से पीला */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    50% {
+        background: linear-gradient(45deg, #00c4ff, #00ff88); /* नीला से हरा */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    100% {
+        background: linear-gradient(45deg, #ff6f61, #ffcc5c); /* वापस नारंगी से पीला */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.content {
+    padding: 40px;
+    text-align: center;
+    height: auto; /* कंटेंट के हिसाब से हाइट */
+    min-height: 500px; /* मिनिमम हाइट */
+}
+
+.content h2 {
+    color: #003087;
+}
+
+.content p {
+    font-size: 18px;
+}
