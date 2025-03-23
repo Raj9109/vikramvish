@@ -23,11 +23,17 @@ header {
     background-color: #003087;
     color: white;
     padding: 10px 20px;
+    position: relative;
 }
 
 .logo {
     display: flex;
     align-items: center;
+}
+
+.name-section {
+    display: flex;
+    flex-direction: column;
 }
 
 .header-photo {
@@ -44,7 +50,7 @@ header {
     text-transform: uppercase;
     letter-spacing: 2px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin-right: 10px;
+    margin: 0;
 }
 
 .main-heading {
@@ -53,14 +59,24 @@ header {
     text-transform: uppercase;
     letter-spacing: 2px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    background: linear-gradient(45deg, #ff6f61, #ffcc5c);
+    background: linear-gradient(45deg, #4CAF50, #8BC34A); /* हरा रंग जो जलवायु परिवर्तन के लिए उपयुक्त है */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav {
+    background-color: #003087;
+    padding: 10px 0;
+    text-align: center;
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    justify-content: center;
     margin: 0;
     padding: 0;
 }
@@ -137,16 +153,11 @@ body.dark-mode .tagline {
 }
 
 .activist-title {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    color: #333;
+    margin: 0;
+    color: #ffffff;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-body.dark-mode .activist-title {
-    color: #ddd;
 }
 
 /* सब-नेविगेशन मेन्यू की स्टाइलिंग */
