@@ -6,7 +6,8 @@ const backgroundImages = [
     'https://raw.githubusercontent.com/raj9109/vikramvish/main/cc5.jpg',
     'https://raw.githubusercontent.com/raj9109/vikramvish/main/cc6.jpg',
     'https://raw.githubusercontent.com/raj9109/vikramvish/main/cc7.jpg',
-    'https://raw.githubusercontent.com/raj9109/vikramvish/main/cc8.jpg'
+    'https://raw.githubusercontent.com/raj9109/vikramvish/main/cc8.jpg',
+    'https://raw.githubusercontent.com/raj9109/vikramvish/main/cc12.jpg'
 ];
 
 function setRandomBackground() {
