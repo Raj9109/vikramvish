@@ -28,7 +28,7 @@ function setRandomBackground() {
 // पेज लोड होने पर पहली बार बैकग्राउंड सेट करें
 window.onload = function() {
     setRandomBackground();
-    // हर 3 सेकंड में बैकग्राउंड बदलें
+    // हर 6 सेकंड में बैकग्राउंड बदलें
     setInterval(setRandomBackground, 3000);
 };
 
