@@ -1,6 +1,19 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* लाइट मोड डिफॉल्ट */
+body.light-mode {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* डार्क मोड */
+body.dark-mode {
+    background-color: #222;
+    color: #ddd;
 }
 
 header {
@@ -17,12 +30,28 @@ header {
     align-items: center;
 }
 
+.header-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid white;
+}
+
 .site-title {
     font-family: 'Montserrat', sans-serif;
-    font-size: 36px;
-    color: #ffffff;
+    font-size: 28px;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-right: 10px;
+}
+
+.main-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     background: linear-gradient(45deg, #ff6f61, #ffcc5c);
     -webkit-background-clip: text;
@@ -50,77 +79,74 @@ nav ul li a:hover {
     color: #00a1d6;
 }
 
+.options {
+    display: flex;
+    align-items: center;
+}
+
 .language {
-    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.theme-toggle button {
+    padding: 5px 10px;
+    background-color: #00a1d6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.theme-toggle button:hover {
+    background-color: #007bb5;
 }
 
 .hero, .content {
-    background-size: cover;
-    background-position: center;
     height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
     text-align: center;
     background-color: #e0f7fa; /* डिफॉल्ट बैकग्राउंड कलर */
+}
+
+body.dark-mode .hero,
+body.dark-mode .content {
+    background-color: #333;
 }
 
 .main-title {
     font-size: 60px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #003087;
+}
+
+body.dark-mode .main-title {
+    color: #00a1d6;
 }
 
 .tagline {
     font-size: 24px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    color: #333;
 }
 
-.profile-photo {
-    width: 150px; /* फोटो की चौड़ाई */
-    height: 150px; /* फोटो की हाइट */
-    border-radius: 50%; /* फोटो को गोल करना */
-    margin-top: 20px; /* टाइटल और फोटो के बीच गैप */
-    border: 3px solid white; /* फोटो के चारों ओर बॉर्डर */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* फोटो पर शैडो */
+body.dark-mode .tagline {
+    color: #ddd;
 }
 
 .activist-title {
-    font-size: 20px; /* टाइटल का साइज़ */
-    font-weight: bold; /* बोल्ड टेक्स्ट */
-    margin-top: 10px; /* फोटो और टाइटल के बीच गैप */
-    margin-bottom: 5px; /* टाइटल और नाम के बीच गैप */
-    color: #ffffff; /* सफेद रंग */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* शैडो */
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #333;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-.profile-name {
-    font-size: 28px; /* नाम का साइज़ */
-    font-weight: bold; /* बोल्ड टेक्स्ट */
-    margin-top: 5px; /* टाइटल और नाम के बीच गैप */
-    text-transform: uppercase; /* टेक्स्ट को अपरकेस में */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* शैडो */
-    animation: flash 2s infinite; /* फ्लैशिंग एनिमेशन */
-}
-
-/* फ्लैशिंग एनिमेशन */
-@keyframes flash {
-    0% {
-        background: linear-gradient(45deg, #ff6f61, #ffcc5c); /* नारंगी से पीला */
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    50% {
-        background: linear-gradient(45deg, #00c4ff, #00ff88); /* नीला से हरा */
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    100% {
-        background: linear-gradient(45deg, #ff6f61, #ffcc5c); /* वापस नारंगी से पीला */
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
+body.dark-mode .activist-title {
+    color: #ddd;
 }
 
 /* सब-नेविगेशन मेन्यू की स्टाइलिंग */
@@ -129,6 +155,11 @@ nav ul li a:hover {
     padding: 10px 0;
     text-align: center;
     border-bottom: 1px solid #ddd;
+}
+
+body.dark-mode .sub-nav {
+    background-color: #333;
+    border-bottom: 1px solid #555;
 }
 
 .sub-nav ul {
@@ -150,6 +181,10 @@ nav ul li a:hover {
     font-size: 16px;
 }
 
+body.dark-mode .sub-nav ul li a {
+    color: #00a1d6;
+}
+
 .sub-nav ul li a:hover {
     color: #00a1d6;
     text-decoration: underline;
@@ -158,19 +193,47 @@ nav ul li a:hover {
 .content {
     padding: 40px;
     text-align: center;
-    height: auto; /* कंटेंट के हिसाब से हाइट */
-    min-height: 500px; /* मिनिमम हाइट */
+    height: auto;
+    min-height: 500px;
 }
 
-.content h2 {
+.content-title {
     color: #003087;
 }
 
-.content p {
+body.dark-mode .content-title {
+    color: #00a1d6;
+}
+
+.intro-text {
     font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    color: #333;
+}
+
+body.dark-mode .intro-text {
+    color: #ddd;
 }
 
 .content h3 {
     color: #003087;
     margin-top: 20px;
+}
+
+body.dark-mode .content h3 {
+    color: #00a1d6;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 10px auto;
+    color: #333;
+}
+
+body.dark-mode .content p {
+    color: #ddd;
 }
