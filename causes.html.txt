@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Change - Causes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="site-title">Climate Change</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="causes.html">Causes</a></li>
+                <li><a href="effects.html">Effects</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+            </ul>
+        </nav>
+        <div class="language">
+            <select id="language" onchange="changeLanguage()">
+                <option value="hi">हिंदी</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+    </header>
+
+    <!-- सब-नेविगेशन मेन्यू -->
+    <nav class="sub-nav">
+        <ul>
+            <li><a href="#co2">CO₂</a></li>
+            <li><a href="#ch4">CH₄</a></li>
+            <li><a href="#n2o">N₂O</a></li>
+            <li><a href="#hfcs">HFCs</a></li>
+            <li><a href="#water-vapor">जल वाष्प</a></li>
+        </ul>
+    </nav>
+
+    <section class="content">
+        <h2>Causes of Climate Change</h2>
+        <p>यहाँ पर केवल मानव जनित कारणों को बताया गया है क्योंकि प्रकृति से होने वाला जलवायु परिवर्तन (जैसे - ज्वालामुखी विस्फोट, सौर विकिरण में बदलाव आदि) को रोकना जटिल है।</p>
+        <p>मानव द्वारा मुख्य रूप निम्नलिखित ग्रीनहाउस गैसों का उत्सर्जन किसी न किसी माध्यम से किया जाता है। माध्यमों को आगे विस्तार में बताया गया है:</p>
+
+        <div id="co2">
+            <h3>कार्बन डाइऑक्साइड (CO₂)</h3>
+            <p>वायुमंडल में समय: सैकड़ों से हजारों सालों तक वायुमंडल में रहती है।</p>
+        </div>
+
+        <div id="ch4">
+            <h3>मीथेन (CH₄)</h3>
+            <p>CO₂ से 25 गुना अधिक होती है, मतलब मीथेन का 1 अणु CO₂ के 25 अणुओं के बराबर होता है।</p>
+            <p>वायुमंडल में समय: लगभग 12 वर्ष।</p>
+        </div>
+
+        <div id="n2o">
+            <h3>नाइट्रस ऑक्साइड (N₂O)</h3>
+            <p>CO₂ से 298 गुना अधिक होती है।</p>
+            <p>वायुमंडल में समय: लगभग 114 वर्ष।</p>
+        </div>
+
+        <div id="hfcs">
+            <h3>हाइड्रोफ्लोरोकार्बन (HFCs)</h3>
+            <p>CO₂ से हज़ारों गुना अधिक।</p>
+            <p>वायुमंडल में समय: 15 से 29 वर्ष।</p>
+        </div>
+
+        <div id="water-vapor">
+            <h3>जल वाष्प</h3>
+            <p>वायुमंडल में समय: कुछ दिन।</p>
+            <p>प्राकृतिक रूप से तापमान में वृद्धि से इसकी मात्रा भी बढ़ती है।</p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
