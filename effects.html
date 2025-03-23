@@ -3,36 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Climate Change</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <title>Climate Change - Effects</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <h1 class="site-title">Climate Change</h1>
+            <img src="https://raw.githubusercontent.com/raj9109/vikramvish/main/vikram-photo.jpeg" alt="Profile Photo" class="header-photo">
+            <h1 class="site-title">VIKRAM</h1>
+            <h1 class="main-heading">Climate Change</h1>
         </div>
         <nav>
             <ul>
-                <li><a href="home.html">होम</a></li>
-                <li><a href="causes.html">कारण</a></li>
-                <li><a href="effects.html">प्रभाव</a></li>
-                <li><a href="solutions.html">समाधान</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="causes.html">Causes</a></li>
+                <li><a href="effects.html">Effects</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
             </ul>
         </nav>
-        <div class="language">
-            <select id="language" onchange="changeLanguage()">
-                <option value="hi">हिंदी</option>
-                <option value="en">English</option>
-            </select>
+        <div class="options">
+            <div class="language">
+                <select id="language" onchange="changeLanguage()">
+                    <option value="hi">हिंदी</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+            <div class="theme-toggle">
+                <button id="theme-btn" onclick="toggleTheme()">Dark Mode</button>
+            </div>
         </div>
     </header>
-
     <section class="content">
-        <h2>जलवायु परिवर्तन के प्रभाव</h2>
-        <p>यहाँ जलवायु परिवर्तन के प्रभावों की जानकारी होगी।</p>
+        <h2 class="content-title">Effects of Climate Change</h2>
+        <p class="intro-text">यहाँ जलवायु परिवर्तन के प्रभावों के बारे में जानकारी दी जाएगी।</p>
     </section>
-
     <script src="script.js"></script>
 </body>
 </html>
