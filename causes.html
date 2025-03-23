@@ -9,7 +9,9 @@
 <body>
     <header>
         <div class="logo">
-            <h1 class="site-title">Climate Change</h1>
+            <img src="https://raw.githubusercontent.com/raj9109/vikramvish/main/vikram-photo.jpeg" alt="Profile Photo" class="header-photo">
+            <h1 class="site-title">VIKRAM</h1>
+            <h1 class="main-heading">Climate Change</h1>
         </div>
         <nav>
             <ul>
@@ -19,11 +21,16 @@
                 <li><a href="solutions.html">Solutions</a></li>
             </ul>
         </nav>
-        <div class="language">
-            <select id="language" onchange="changeLanguage()">
-                <option value="hi">हिंदी</option>
-                <option value="en">English</option>
-            </select>
+        <div class="options">
+            <div class="language">
+                <select id="language" onchange="changeLanguage()">
+                    <option value="hi">हिंदी</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+            <div class="theme-toggle">
+                <button id="theme-btn" onclick="toggleTheme()">Dark Mode</button>
+            </div>
         </div>
     </header>
 
@@ -39,9 +46,9 @@
     </nav>
 
     <section class="content">
-        <h2>Causes of Climate Change</h2>
-        <p>यहाँ पर केवल मानव जनित कारणों को बताया गया है क्योंकि प्रकृति से होने वाला जलवायु परिवर्तन (जैसे - ज्वालामुखी विस्फोट, सौर विकिरण में बदलाव आदि) को रोकना जटिल है।</p>
-        <p>मानव द्वारा मुख्य रूप निम्नलिखित ग्रीनहाउस गैसों का उत्सर्जन किसी न किसी माध्यम से किया जाता है। माध्यमों को आगे विस्तार में बताया गया है:</p>
+        <h2 class="content-title">Causes of Climate Change</h2>
+        <p class="intro-text">यहाँ पर केवल मानव जनित कारणों को बताया गया है क्योंकि प्रकृति से होने वाला जलवायु परिवर्तन (जैसे - ज्वालामुखी विस्फोट, सौर विकिरण में बदलाव आदि) को रोकना जटिल है।</p>
+        <p class="intro-text">मानव द्वारा मुख्य रूप निम्नलिखित ग्रीनहाउस गैसों का उत्सर्जन किसी न किसी माध्यम से किया जाता है। माध्यमों को आगे विस्तार में बताया गया है:</p>
 
         <div id="co2">
             <h3>कार्बन डाइऑक्साइड (CO₂)</h3>
